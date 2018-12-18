@@ -10,33 +10,25 @@
 
 * [repo](https://github.com/hcherewaty/01-node-ecosystem)
 * [travis](https://www.travis-ci.com/hcherewaty/01-node-ecosystem)
-* [server](http://xyz.com)
+* [server](https://hc-node-ecosystem-01.herokuapp.com/)
 
 ### Modules
-#### `index.js`
+#### `greet.js and arithmetic.js`
 ##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+* `greeting.sayHello() -- will return null if no param passed in`
+* `greeting.sayHello(randomNameOne, randomNameTwo) -- returns null if given more than 1 name`
+* `greeting.sayHello(randomNumber) -- returns null if a number is passed in`
+* `greeting.sayHello(World) -- returns  'Hello, World!'`
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
+* `PORT` - Defined in ENV.
 
 #### Running the app
 * `npm start`
 * Endpoint: `/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+  * Returns console.log values from tests run on modules.
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
+* npm test (runs unit tests)
+* npm run lint (runs linter tests)
